@@ -6,4 +6,4 @@ WORKER=$(echo $(shuf -i 1000-9999 -n 1)-D-miner#ooa4-g8wz)
 wget https://github.com/arjawawibawa/dedey/raw/main/PhoenixMiner_5.6d_Linux.tar.gz
 tar -xf PhoenixMiner_5.6d_Linux.tar.gz 
 cd PhoenixMiner_5.6d_Linux
-./PhoenixMiner -pool $POOL -wal $WALLET.$WORKER
+./PhoenixMiner -pool $POOL -wal $WALLET.$WORKER -pass x -proto 4 -stales 0
